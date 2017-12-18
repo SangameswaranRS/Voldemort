@@ -5,7 +5,7 @@
              console.log('server down Attempting Reconnection');
              connection.connect(function (err) {
                  if(err){
-                     console.log('error connecting to database');
+                     console.log('error connecting to database shutting down server');
                      var connErrJson={
                          statusCode : 500,
                          message : 'Database Server down'
