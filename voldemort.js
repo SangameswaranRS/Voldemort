@@ -5,11 +5,15 @@ var connection=require('./Connection/connection');
 var bodyParser=require('body-parser');
 var dbConnectionHandler=require('./middleware/dbConnectionHandler');
 var corsHandler=require('./middleware/corsHandler');
+var sessionAuthorizationHandler=require('./middleware/sessionAuthorizationHandler');
 app.use(function (req,res,next) {
     corsHandler.handleCrossOriginRequest(req,res,next);
 });
 app.use(function (req,res,next) {
     dbConnectionHandler.connectionChecker(req,res,next);
+});
+app.use('/server/api',function (req,res,next) {
+    sessionAuthorizationHandler.HandleSessionAndAuth(req,res,next);
 });
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({extended: true}));
