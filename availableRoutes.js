@@ -6,6 +6,7 @@
     var createNewPostController=require('./Controllers/createNewPostController');
     var getFollowinggUsersController=require('./Controllers/getFollowingUsersController');
     var getFollowedUsersController=require('./Controllers/getFollowedUsersController');
+    var likePostController=require('./Controllers/likePostController');
     var getUserProfilePostsController=require('./Controllers/getUserProfilePostsController');
     var getNewsFeedProfilePostsController=require('./Controllers/getNewsFeedProfilePostsController');
     var multer = require('multer');
@@ -63,6 +64,9 @@
     });
     Router.post('/getFollowedUsers',function (req,res) {
         getFollowedUsersController.getFollowedUsers(req,res);
+    });
+    Router.post('/likePost',function (req,res) {
+        likePostController.likePost(req,res);
     });
     module.exports=Router;
 })();
