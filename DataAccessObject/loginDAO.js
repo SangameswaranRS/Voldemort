@@ -12,10 +12,10 @@
                       });
                   } else{
                       console.log(data);
-                      var data0=data[0];
                       if(data ===undefined){
                           callBack(404,data);
                       }else if(data.length>0){
+                          var data0=data[0];
                           var actualPassword=data0.password;
                           if(password===actualPassword){
                               //continue checking session,passwords match
@@ -37,7 +37,11 @@
                                                  if(err){
                                                      callBack(err,data);
                                                  }else {
-                                                     callBack(null, sessionToken);
+                                                     var callBackJson={
+                                                        userId : userId,
+                                                         sessionToken : sessionToken
+                                                     };
+                                                     callBack(null, callBackJson);
                                                  }
                                              });
                                          }

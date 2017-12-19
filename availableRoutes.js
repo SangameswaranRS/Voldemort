@@ -3,6 +3,7 @@
     var Router=express.Router();
     var getImageController=require('./Controllers/getImageController');
     var postFollowingController=require('./Controllers/postFollowingController');
+    var createNewPostController=require('./Controllers/createNewPostController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
         destination: function(req, file, callback) {
@@ -43,6 +44,9 @@
     });
     Router.post('/postFollowing',function (req,res) {
         postFollowingController.onPostFollowing(req,res);
+    });
+    Router.post('/uploadPost',function (req,res) {
+        createNewPostController.createNewPost(req,res);
     });
     module.exports=Router;
 })();

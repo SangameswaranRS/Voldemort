@@ -16,11 +16,12 @@
                    message : 'Sign Up Unsuccessful! Try again.'
                };
                res.status(500).send(signUpError);
-           }else{
+           }else if(err===null) {
                 var successJson={
                     statusCode : 200,
                     message :'Signed up successfully',
-                    token : data
+                    token : data.accessToken,
+                    userId : data.userId
                 };
                 res.send(successJson);
            }

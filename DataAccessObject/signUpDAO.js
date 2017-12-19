@@ -45,7 +45,11 @@
                                                             });
                                                         } else {
                                                             //commit success
-                                                            callBack(null, userToken);
+                                                            var callBackJson={
+                                                              userId :userId,
+                                                                accessToken : userToken
+                                                            };
+                                                            callBack(null, callBackJson);
                                                         }
                                                     });
                                                 }

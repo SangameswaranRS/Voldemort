@@ -6,11 +6,12 @@
         password=req.body.password;
         loginDAO.authenticateCredentials(userName,password,function (err,data) {
            if(err===null){
-               var accessToken=data;
+               var accessToken=data.sessionToken;
                var successJson={
                     statusCode : 200,
                    message : "Logged in successfully",
-                   token : accessToken
+                   token : accessToken,
+                   userId : data.userId
                };
                res.send(successJson);
            } else if(err === 401){
