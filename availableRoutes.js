@@ -2,18 +2,20 @@
     var express=require('express');
     var Router=express.Router();
     var getImageController=require('./Controllers/getImageController');
+    var postFollowingController=require('./Controllers/postFollowingController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
         destination: function(req, file, callback) {
             callback(null, "C://Users/Sangameswaran/profPics/");
         },
         filename: function(req, file, callback) {
-            callback(null, file.fieldname + "_" + Date.now() + "_" + file.originalname);
+            console.log(file);
+            callback(null, req.get('userName') + "_" + Date.now() + "_" + file.originalname);
         }
     });
     var upload = multer({
         storage: Storage
-    }).array("imgUploader", 3);
+    }).array("image", 3);
     Router.get('/testConn',function (req,res) {
        res.send('Connection OK');
     });
@@ -21,6 +23,7 @@
         getImageController.getImages(req,res);
     });
     Router.post('/uploadFileTest',function (req,res) {
+        console.log(req.body);
         upload(req, res, function(err) {
             if (err) {
                 console.log(err);
@@ -37,6 +40,9 @@
                 return res.send(successJson);
             }
         });
+    });
+    Router.post('/postFollowing',function (req,res) {
+        postFollowingController.onPostFollowing(req,res);
     });
     module.exports=Router;
 })();
