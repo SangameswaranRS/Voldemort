@@ -10,5 +10,14 @@
            }
         });
 
+    };
+    module.exports.getLikedPosts=function (userId,callBack) {
+        connection.query('select postId from postToLikeMap where userId=?;',userId,function (err,data) {
+            if(err){
+                callBack(err,null);
+            }  else{
+                callBack(null,data);
+            }
+        });
     }
 })();
