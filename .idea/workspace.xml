@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1293640-c6c8-4bd9-b518-aef8ecd58aba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/createNewPostController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/imageHandler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/getNewsFeedProfilePostsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/getUserProfilePostsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataAccessObject/getNewsFeedProfilePostsDAO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataAccessObject/getUserProfilePostsDAO.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/loginController.js" afterPath="$PROJECT_DIR$/Controllers/loginController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAccessObject/loginDAO.js" afterPath="$PROJECT_DIR$/DataAccessObject/loginDAO.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/imageHandler.js" afterPath="$PROJECT_DIR$/Controllers/imageHandler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js" afterPath="$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/availableRoutes.js" afterPath="$PROJECT_DIR$/availableRoutes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voldemort.js" afterPath="$PROJECT_DIR$/voldemort.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,109 +25,60 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="voldemort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voldemort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imageHandler.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/imageHandler.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signUpController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/signUpController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="availableRoutes.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="availableRoutes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/availableRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="48" column="55" lean-forward="false" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+            <state relative-caret-position="202">
+              <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
               <folding>
-                <element signature="e#393#714#0" expanded="false" />
-                <element signature="e#741#773#0" expanded="false" />
-                <element signature="e#1043#1630#0" expanded="false" />
+                <element signature="e#589#910#0" expanded="false" />
+                <element signature="e#937#969#0" expanded="false" />
+                <element signature="e#1036#1077#0" expanded="false" />
+                <element signature="e#1239#1826#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createNewPostController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/createNewPostController.js">
+      <file leaf-file-name="getNewsFeedProfilePostsController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/getNewsFeedProfilePostsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createNewPostDAO.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="44" column="42" lean-forward="true" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+            <state relative-caret-position="51">
+              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
               <folding>
-                <element signature="e#263#1913#0" expanded="false" />
-                <element signature="e#2278#2446#0" expanded="false" />
-                <element signature="e#2548#2676#0" expanded="false" />
+                <element signature="e#301#419#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginDAO.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataAccessObject/loginDAO.js">
+      <file leaf-file-name="getNewsFeedProfilePostsDAO.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataAccessObject/getNewsFeedProfilePostsDAO.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="51">
+              <caret line="3" column="359" lean-forward="false" selection-start-line="3" selection-start-column="359" selection-end-line="3" selection-end-column="359" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/loginController.js">
+      <file leaf-file-name="getUserProfilePostsController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/getUserProfilePostsController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-              <folding />
+              <caret line="15" column="41" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="15" selection-end-column="41" />
+              <folding>
+                <element signature="e#288#406#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postFollowingController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/postFollowingController.js">
+      <file leaf-file-name="getUserProfilePostsDAO.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataAccessObject/getUserProfilePostsDAO.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postFollowingDAO.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataAccessObject/postFollowingDAO.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="68">
+              <caret line="4" column="284" lean-forward="false" selection-start-line="4" selection-start-column="284" selection-end-line="4" selection-end-column="284" />
               <folding />
             </state>
           </provider>
@@ -150,27 +101,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Connection/connection.js" />
         <option value="$PROJECT_DIR$/middleware/corsHandler.js" />
         <option value="$PROJECT_DIR$/homeRoutes.js" />
-        <option value="$PROJECT_DIR$/Controllers/signUpController.js" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/DataAccessObject/signUpDAO.js" />
         <option value="$PROJECT_DIR$/loginRoutes.js" />
         <option value="$PROJECT_DIR$/middleware/dbConnectionHandler.js" />
         <option value="$PROJECT_DIR$/middleware/sessionAuthorizationHandler.js" />
         <option value="$PROJECT_DIR$/Controllers/getImageController.js" />
         <option value="$PROJECT_DIR$/Controllers/uploadImageController.js" />
-        <option value="$PROJECT_DIR$/voldemort.js" />
         <option value="$PROJECT_DIR$/Controllers/sample.html" />
         <option value="$PROJECT_DIR$/Controllers/postFollowingController.js" />
-        <option value="$PROJECT_DIR$/Controllers/imageHandler.js" />
         <option value="$PROJECT_DIR$/DataAccessObject/postFollowingDAO.js" />
-        <option value="$PROJECT_DIR$/availableRoutes.js" />
-        <option value="$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js" />
         <option value="$PROJECT_DIR$/Controllers/createNewPostController.js" />
         <option value="$PROJECT_DIR$/DataAccessObject/loginDAO.js" />
         <option value="$PROJECT_DIR$/Controllers/loginController.js" />
+        <option value="$PROJECT_DIR$/DataAccessObject/signUpDAO.js" />
+        <option value="$PROJECT_DIR$/Controllers/signUpController.js" />
+        <option value="$PROJECT_DIR$/Connection/connection.js" />
+        <option value="$PROJECT_DIR$/voldemort.js" />
+        <option value="$PROJECT_DIR$/Controllers/imageHandler.js" />
+        <option value="$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js" />
+        <option value="$PROJECT_DIR$/Controllers/getUserProfilePostsController.js" />
+        <option value="$PROJECT_DIR$/DataAccessObject/getUserProfilePostsDAO.js" />
+        <option value="$PROJECT_DIR$/DataAccessObject/getNewsFeedProfilePostsDAO.js" />
+        <option value="$PROJECT_DIR$/Controllers/getNewsFeedProfilePostsController.js" />
+        <option value="$PROJECT_DIR$/availableRoutes.js" />
       </list>
     </option>
   </component>
@@ -378,15 +333,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513531641317</updated>
-      <workItem from="1513531643971" duration="42160000" />
+      <workItem from="1513531643971" duration="50097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42160000" />
+    <option name="totallyTimeSpent" value="50097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="0" width="1298" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26587301" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -395,7 +351,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31229237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31229237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -419,14 +375,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Connection/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/corsHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -464,17 +412,6 @@
         <state relative-caret-position="34">
           <caret line="2" column="63" lean-forward="true" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataAccessObject/signUpDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
-          <folding>
-            <element signature="e#889#1095#0" expanded="false" />
-            <element signature="e#1195#1417#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,14 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/voldemort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/postFollowingController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -547,54 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/imageHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/signUpController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/availableRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="48" column="55" lean-forward="false" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-          <folding>
-            <element signature="e#393#714#0" expanded="false" />
-            <element signature="e#741#773#0" expanded="false" />
-            <element signature="e#1043#1630#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/createNewPostController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="44" column="42" lean-forward="true" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
-          <folding>
-            <element signature="e#263#1913#0" expanded="false" />
-            <element signature="e#2278#2446#0" expanded="false" />
-            <element signature="e#2548#2676#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataAccessObject/loginDAO.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -608,6 +489,133 @@
         <state relative-caret-position="204">
           <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataAccessObject/signUpDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="51" column="87" lean-forward="false" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+          <folding>
+            <element signature="e#889#1095#0" expanded="false" />
+            <element signature="e#1195#1417#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/signUpController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Connection/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/imageHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/createNewPostController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="e#262#1171#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voldemort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#412#471#0" expanded="false" />
+            <element signature="e#506#566#0" expanded="false" />
+            <element signature="e#615#686#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataAccessObject/createNewPostDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="73" column="96" lean-forward="false" selection-start-line="73" selection-start-column="96" selection-end-line="73" selection-end-column="96" />
+          <folding>
+            <element signature="e#263#1913#0" expanded="false" />
+            <element signature="e#2278#2446#0" expanded="false" />
+            <element signature="e#2548#2676#0" expanded="false" />
+            <element signature="e#4113#4646#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataAccessObject/getUserProfilePostsDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="284" lean-forward="false" selection-start-line="4" selection-start-column="284" selection-end-line="4" selection-end-column="284" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/getUserProfilePostsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="e#288#406#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/pm2/lib/Interactor/HttpRequest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataAccessObject/getNewsFeedProfilePostsDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="359" lean-forward="false" selection-start-line="3" selection-start-column="359" selection-end-line="3" selection-end-column="359" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/getNewsFeedProfilePostsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="e#301#419#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/availableRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding>
+            <element signature="e#589#910#0" expanded="false" />
+            <element signature="e#937#969#0" expanded="false" />
+            <element signature="e#1036#1077#0" expanded="false" />
+            <element signature="e#1239#1826#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

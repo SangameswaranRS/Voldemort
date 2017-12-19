@@ -71,13 +71,21 @@
                                          });
                                      } else{
                                          console.log('Updating image URL Done');
-                                         connection.commit(function (err) {
+                                         connection.query('insert into usertopostmap values(?,?)',[userId,postId],function (err,data) {
                                             if(err){
-                                                connection.rollback(function () {
+                                               connection.rollback(function () {
                                                    callBack(err,null);
-                                                });
+                                               }) ;
                                             } else{
-                                                callBack(null,data);
+                                                connection.commit(function (err) {
+                                                    if(err){
+                                                        connection.rollback(function () {
+                                                            callBack(err,null);
+                                                        });
+                                                    } else{
+                                                        callBack(null,data);
+                                                    }
+                                                });
                                             }
                                          });
                                      }

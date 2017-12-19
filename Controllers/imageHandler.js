@@ -4,8 +4,9 @@
         try{
             var name = data.postId+".jpg";
             var base64d = data.img.replace(/^data:image\/png;base64,/, "");
+            var newBase64d=base64d.replace(/^data:image\/jpeg;base64,/,"");
             var path = 'C://Users/Sangameswaran/profPics/'+name;
-            fs.writeFile(path,base64d,'base64',function(err){
+            fs.writeFile(path,newBase64d,'base64',function(err){
                 callback(err,path);
             });
         }

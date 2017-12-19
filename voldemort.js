@@ -16,8 +16,8 @@ app.use('/server/api',function (req,res,next) {
     sessionAuthorizationHandler.HandleSessionAndAuth(req,res,next);
 });
 app.use(logger('dev'));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true,limit :'50mb'}));
+app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 var routes=require('./homeRoutes')(app);
 app.listen(5959);

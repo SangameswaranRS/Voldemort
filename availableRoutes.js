@@ -4,6 +4,8 @@
     var getImageController=require('./Controllers/getImageController');
     var postFollowingController=require('./Controllers/postFollowingController');
     var createNewPostController=require('./Controllers/createNewPostController');
+    var getUserProfilePostsController=require('./Controllers/getUserProfilePostsController');
+    var getNewsFeedProfilePostsController=require('./Controllers/getNewsFeedProfilePostsController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
         destination: function(req, file, callback) {
@@ -47,6 +49,12 @@
     });
     Router.post('/uploadPost',function (req,res) {
         createNewPostController.createNewPost(req,res);
+    });
+    Router.post('/getUserProfilePosts',function (req,res) {
+        getUserProfilePostsController.getUserProfilePosts(req,res);
+    });
+    Router.post('/getNewsFeedPosts',function (req,res) {
+        getNewsFeedProfilePostsController.getNewsFeedPosts(req,res);
     });
     module.exports=Router;
 })();
