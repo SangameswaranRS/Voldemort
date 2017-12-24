@@ -1,11 +1,13 @@
 var express=require('express');
 var app=express();
 var logger = require('morgan');
+var cors=require('cors');
 var connection=require('./Connection/connection');
 var bodyParser=require('body-parser');
 var dbConnectionHandler=require('./middleware/dbConnectionHandler');
 var corsHandler=require('./middleware/corsHandler');
 var sessionAuthorizationHandler=require('./middleware/sessionAuthorizationHandler');
+app.use(cors());
 app.use(function (req,res,next) {
     corsHandler.handleCrossOriginRequest(req,res,next);
 });
