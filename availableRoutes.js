@@ -10,6 +10,9 @@
     var getUserInitConfigController=require('./Controllers/getUserInitConfigController');
     var getUserProfilePostsController=require('./Controllers/getUserProfilePostsController');
     var getNewsFeedProfilePostsController=require('./Controllers/getNewsFeedProfilePostsController');
+    var addProfessionController=require('./Controllers/addProfessionController');
+    var getProfessionForUserIdController=require('./Controllers/getProfessionForUserIdController');
+    var updateBioController=require('./Controllers/updateBioController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
         destination: function(req, file, callback) {
@@ -71,6 +74,15 @@
     });
     Router.post('/getUserInitConfig',function (req,res) {
         getUserInitConfigController.getInitConfig(req,res);
+    });
+    Router.post('/addProfession',function (req,res) {
+        addProfessionController.addProfession(req,res);
+    });
+    Router.post('/getProfessionForUserId',function (req,res) {
+        getProfessionForUserIdController.getProfession(req,res);
+    });
+    Router.post('/updateBio',function (req,res) {
+        updateBioController.updateBio(req,res);
     });
     module.exports=Router;
 })();
