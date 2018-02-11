@@ -13,6 +13,9 @@
     var addProfessionController=require('./Controllers/addProfessionController');
     var getProfessionForUserIdController=require('./Controllers/getProfessionForUserIdController');
     var updateBioController=require('./Controllers/updateBioController');
+    var unlikePostController =require('./Controllers/unlikePostController');
+    var getAllUserInfoController = require('./Controllers/getAllUserInfoController');
+    var queryBasedUserSearchController = require('./Controllers/queryBasedUserSearchController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
         destination: function(req, file, callback) {
@@ -83,6 +86,15 @@
     });
     Router.post('/updateBio',function (req,res) {
         updateBioController.updateBio(req,res);
+    });
+    Router.post('/unlikePost',function (req,res) {
+        unlikePostController.unlikePost(req,res);
+    });
+    Router.get('/getAllUserInfo',function (req,res) {
+        getAllUserInfoController.getAllUser(req,res);
+    });
+    Router.get('/queryBasedUserSearch',function (req,res) {
+        queryBasedUserSearchController.queryBasedSearch(req,res);
     });
     module.exports=Router;
 })();
