@@ -43,7 +43,7 @@
                                                                followingUserJson :followingUserCountJson,
                                                                followedUserJson : followedUserCountJson
                                                            };
-                                                           console.log(callBackJson);
+                                                           //console.log(callBackJson);
                                                            connection.commit(function () {
                                                               callBack(null,callBackJson);
                                                            });

@@ -11,7 +11,7 @@
                           callBack(err,data);
                       });
                   } else{
-                      console.log(data);
+                      //console.log(data);
                       if(data ===undefined){
                           callBack(404,data);
                       }else if(data.length>0){
@@ -28,7 +28,7 @@
                                      });
                                  } else{
                                      if(data.length>0){
-                                         console.log(data);
+                                         //console.log(data);
                                          if(data !==undefined){
                                              var data0=data[0];
                                              var sessionToken=data0.sessionToken;
