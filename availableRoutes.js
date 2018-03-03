@@ -16,6 +16,8 @@
     var unlikePostController =require('./Controllers/unlikePostController');
     var getAllUserInfoController = require('./Controllers/getAllUserInfoController');
     var queryBasedUserSearchController = require('./Controllers/queryBasedUserSearchController');
+    var CollectiveCommentController = require('./Controllers/CollectiveCommentController');
+    var getPostController = require('./Controllers/getPostInfoController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
         destination: function(req, file, callback) {
@@ -95,6 +97,12 @@
     });
     Router.get('/queryBasedUserSearch',function (req,res) {
         queryBasedUserSearchController.queryBasedSearch(req,res);
+    });
+    Router.post('/postComment',function (req,res) {
+       CollectiveCommentController.addComment(req,res);
+    });
+    Router.get('/getPostInfo',function (req,res) {
+       getPostController.getPostInfo(req,res);
     });
     module.exports=Router;
 })();
