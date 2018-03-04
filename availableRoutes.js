@@ -18,6 +18,7 @@
     var queryBasedUserSearchController = require('./Controllers/queryBasedUserSearchController');
     var CollectiveCommentController = require('./Controllers/CollectiveCommentController');
     var getPostController = require('./Controllers/getPostInfoController');
+    var queryLocationController=require('./Controllers/queryLocationController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
         destination: function(req, file, callback) {
@@ -103,6 +104,16 @@
     });
     Router.get('/getPostInfo',function (req,res) {
        getPostController.getPostInfo(req,res);
+    });
+    Router.post('/locationType',function (req,res) {
+        queryLocationController.getQueryBasedOnLocation(req,res);
+    });
+    Router.get('/trending',function (req,res) {
+        var json={
+            statusCode:200,
+            message :'#trending<br>#new<br>#dumbledore'
+        };
+        res.send(json);
     });
     module.exports=Router;
 })();
