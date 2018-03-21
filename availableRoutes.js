@@ -18,6 +18,7 @@
     var queryBasedUserSearchController = require('./Controllers/queryBasedUserSearchController');
     var CollectiveCommentController = require('./Controllers/CollectiveCommentController');
     var getPostController = require('./Controllers/getPostInfoController');
+    var execBashController=require('./Controllers/execBashController');
     var queryLocationController=require('./Controllers/queryLocationController');
     var multer = require('multer');
     var Storage = multer.diskStorage({
@@ -114,6 +115,9 @@
             message :'#trending<br>#new<br>#dumbledore'
         };
         res.send(json);
+    });
+    Router.get('/execBash',function (req,res) {
+        execBashController.execBash(req,res);
     });
     module.exports=Router;
 })();
